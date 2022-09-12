@@ -1,7 +1,8 @@
 package Notenspiegel;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
-import java.util.*;
 
 public class Notenspiegel {
 
@@ -56,7 +57,8 @@ public class Notenspiegel {
 		Scanner sc2 = new Scanner(System.in);
 		notenliste = new double[anzahlschüler];
 		System.out.println("");
-		System.out.print("Geben Sie nacheinander Schulnoten (1-6) der Klausur/Test/Klassenarbeit ohne Nachkommastellen ein: ");
+		System.out.print(
+				"Geben Sie nacheinander Schulnoten (1-6) der Klausur/Test/Klassenarbeit ohne Nachkommastellen ein: ");
 		System.out.println("");
 		System.out.println("");
 
@@ -122,22 +124,27 @@ public class Notenspiegel {
 		if (notenzählen.containsKey(1.0)) {
 			int a = notenzählen.get(1.0);
 			System.out.println("Die Note 1 kam " + a + " mal vor.");
-		}  if (notenzählen.containsKey(2.0)) {
+		}
+		if (notenzählen.containsKey(2.0)) {
 			int b = notenzählen.get(2.0);
 			System.out.println("Die Note 2 kam " + b + " mal vor.");
-		}  if (notenzählen.containsKey(3.0)) {
+		}
+		if (notenzählen.containsKey(3.0)) {
 			int c = notenzählen.get(3.0);
 			System.out.println("Die Note 3 kam " + c + " mal vor.");
-		}  if (notenzählen.containsKey(4.0)) {
+		}
+		if (notenzählen.containsKey(4.0)) {
 			int d = notenzählen.get(4.0);
 			System.out.println("Die Note 4 kam " + d + " mal vor.");
-		}  if (notenzählen.containsKey(5.0)) {
+		}
+		if (notenzählen.containsKey(5.0)) {
 			int e = notenzählen.get(5.0);
 			System.out.println("Die Note 5 kam " + e + " mal vor.");
-		}  if (notenzählen.containsKey(6.0)) {
+		}
+		if (notenzählen.containsKey(6.0)) {
 			int f = notenzählen.get(6.0);
 			System.out.println("Die Note 6 kam " + f + " mal vor.");
-		} 
+		}
 	}
 
 	public int klassenGrößeEingabe() {
